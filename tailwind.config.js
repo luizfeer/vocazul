@@ -207,6 +207,9 @@ module.exports = {
       '0': '0',
       default: '1',
     },
+    fill: theme => ({          
+          'blue': theme('colors.blue.5'),
+         })
 
   },
 

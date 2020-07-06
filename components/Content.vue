@@ -1,7 +1,7 @@
 <template>
-<div class="container p-0">
+<div class="container p-0 mt-24">
 
-    <div class="flex justify-between mt-8 ">
+    <div class="flex justify-between ">
         <ul class="p-2 pr-6 pl-0">
             <li class="text-blue-5 uppercase font-medium text-xs ">veja</li>
             <li class="text-2xl font-alternate">Como funciona</li>
@@ -143,6 +143,6 @@
 <style scoped>
  ul.about {
     background-image: url('../assets/img/fullbanner.svg');
-    @apply font-light text-white;
+    /* @apply font-light text-white; */
   }
 </style>
