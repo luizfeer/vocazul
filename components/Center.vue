@@ -1,5 +1,5 @@
 <template>
-    <div class="md:flex md:justify-between items-end h-auto mt-16">
+    <div class="center md:flex md:justify-between items-end pt-2">
         <div class="social hidden md:flex">
             <ul class="social-icons">
                 <li><img src="~assets/fb.svg" alt="Facebook" /></li>
@@ -27,6 +27,9 @@
 
 </template>
 <style scoped>
+.center{
+    height:510px;
+}
 ul.social-icons li{
     margin: 20px;
 }
