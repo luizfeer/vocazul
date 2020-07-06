@@ -1,8 +1,8 @@
 <template>
 <main class="container p-0 mt-24">
 
-    <div class="flex justify-between ">
-        <ul class="p-2 pr-6 pl-0">
+    <div class="flex justify-between overflow-x-auto ">
+        <ul class="p-2 pr-6 pl-0 w-full">
             <li class="text-blue-5 uppercase font-medium text-xs ">veja</li>
             <li class="text-2xl font-alternate">Como funciona</li>
             <li class="my-3">Entenda como o Você Azul funciona e não perca tempo, faça agora mesmo uma solicitação de crédito pessoal.</li>
@@ -61,7 +61,7 @@
         <li class="text-2xl font-bold">
             Blog
         </li>
-        <li class="grid justify-between  grid-cols-4 gap-6">
+        <li class="grid justify-between  grid-cols-4 gap-6 overflow-x-auto">
            <article> 
                <ul class="min-w-60  bg-white rounded-lg shadow-md">
                 <li class="">

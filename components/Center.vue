@@ -7,9 +7,9 @@
                 <li><img src="~assets/img/insta.svg" alt="Insta" /></li>
             </ul>
         </div>
-        <div class="person hidden md:flex">
+        <figure class="person hidden md:flex">
             <img src="~assets/img/person.png" alt="">
-        </div>
+        </figure>
         <div class="consult h-full flex-col justify-end my-4 md:my-2 ">
             <p class="text-3xl uppercase text-left md:text-right text-white md:max-w-md my-4 md:my-2 ">
             Tá querendo sair do vermelho e ficar de bem com a vida?
