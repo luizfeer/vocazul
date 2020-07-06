@@ -31,7 +31,7 @@ export default {
 </script>
 <style>
 header{
-  background: url('~assets/header.svg');
+  background: url('~assets/img/header.svg');
   height: 620px;
   
 }

@@ -2,13 +2,13 @@
     <div class="center md:flex md:justify-between items-end pt-2">
         <div class="social hidden md:flex">
             <ul class="social-icons">
-                <li><img src="~assets/fb.svg" alt="Facebook" /></li>
-                <li><img src="~assets/tt.svg" alt="Twitter" /></li>
-                <li><img src="~assets/insta.svg" alt="Insta" /></li>
+                <li><img src="~assets/img/fb.svg" alt="Facebook" /></li>
+                <li><img src="~assets/img/tt.svg" alt="Twitter" /></li>
+                <li><img src="~assets/img/insta.svg" alt="Insta" /></li>
             </ul>
         </div>
         <div class="person hidden md:flex">
-            <img src="~assets/person.png" alt="">
+            <img src="~assets/img/person.png" alt="">
         </div>
         <div class="consult h-full flex-col justify-end my-4 md:my-2 ">
             <p class="text-3xl uppercase text-left md:text-right text-white md:max-w-md my-4 md:my-2 ">

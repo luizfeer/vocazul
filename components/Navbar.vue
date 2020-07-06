@@ -1,7 +1,7 @@
 <template>
     <div class="navbar flex justify-between py-5">
         <div class="logo">
-            <img id="image0" width="188" height="35" src="~assets/logo.svg">
+            <img id="image0" width="188" height="35" src="~assets/img/logo.svg">
         </div>
 
         <div class="menu">
