@@ -1,14 +1,14 @@
 <template>
-<main class="container p-0 mt-24">
+<main class="container p-0 p-6 md:p-0 mt-24 ">
 
     <div class="flex justify-between overflow-x-auto ">
-        <ul class="p-2 pr-6 pl-0 w-full">
+        <ul class="p-2 pr-6 pl-0 min-w-3/4 md:min-w-0">
             <li class="text-blue-5 uppercase font-medium text-xs ">veja</li>
             <li class="text-2xl font-alternate">Como funciona</li>
             <li class="my-3">Entenda como o Você Azul funciona e não perca tempo, faça agora mesmo uma solicitação de crédito pessoal.</li>
             <li class="rounded-full my-2 py-2 px-4 bg-yellow uppercase w-full text-base text-white text-center font-semibold" >realizar um emprestimo</li>
         </ul>
-        <ul class="bg-white p-6 m-2 rounded-lg shadow-md ">
+        <ul class="bg-white p-6 m-2 rounded-lg shadow-md min-w-3/4 md:min-w-0 ">
             <li>
                 <img src="~assets/img/tablet.svg" alt="tablet">
             </li>
@@ -19,7 +19,7 @@
                 Você pode realizar seu cadastro diretamente pelo site ou baixando o app da Você Azul no seu celular pelo Google Play.
             </li>
         </ul>
-        <ul class="bg-white p-6 m-2 rounded-lg shadow-md">
+        <ul class="bg-white p-6 m-2 rounded-lg shadow-md min-w-3/4 md:min-w-0">
             <li>
             <img src="~assets/img/man.svg" alt="man">
             </li>
@@ -31,7 +31,7 @@
             </li>
         
         </ul>
-         <ul class="bg-white  p-6 m-2 mr-0 rounded-lg shadow-md">
+         <ul class="bg-white  p-6 m-2 mr-0 rounded-lg shadow-md  min-w-3/4 md:min-w-0 ">
              <li>
             <img src="~assets/img/money.svg" alt="money">
              </li>
