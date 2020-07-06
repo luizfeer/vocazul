@@ -1,6 +1,8 @@
 <template>
     <div class="container flex justify-between">
-        <div>como funciona</div>
+        <div>
+            <p class="text-blue-5 uppercase">veja</p>
+        </div>
         <div>
             <img src="~assets/tablet.svg" alt="tablet">
         </div>

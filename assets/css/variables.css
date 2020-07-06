@@ -14,6 +14,12 @@
   --color-white-10: rgba(255, 255, 255, 0.1);
   --color-white-5: rgba(255, 255, 255, 0.05);
 
+  --color-blue-15: #000631;
+  --color-blue-10: #274486;
+  --color-blue-5: #1CA3EC;
+
+  --color-yellow: #F5C123;
+
   --color-gray-100: #f5f6fd;
   --color-gray-200: #dbdef1;
   --color-gray-300: #bdbfcc;

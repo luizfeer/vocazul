@@ -17,7 +17,7 @@
             <!-- bg-white bg-opacity-75 -->
             <ul class="help uppercase text-white rounded-full py-2 px-4 flex justify-between items-center md:float-right my-4 md:my-2 ">
                 <li class="mr-4" style="font-size: 16px">Nos podemos te ajudar </li>
-                <li class="rounded-full py-2 px-4" style="font-size: 11px; background: #FFCE1A;">saiba mais</li>
+                <li class="rounded-full py-2 px-4 bg-yellow" >saiba mais</li>
             </ul>
         </div>
     </div>    

@@ -142,6 +142,14 @@ module.exports = {
           '10': 'var(--color-white-10)',
           '5': 'var(--color-white-5)'
         },
+        yellow:{
+          'default': 'var(--color-yellow)',
+        },
+        blue:{
+          '5': 'var(--color-blue-5)',
+          '10': 'var(--color-blue-10)',
+          '15': 'var(--color-blue-15)',
+        },
 
         gray: {
           '100': 'var(--color-gray-100)',
