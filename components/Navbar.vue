@@ -1,5 +1,5 @@
 <template>
-    <div class="navbar flex justify-between py-5">
+    <nav class="navbar flex justify-between py-5">
         <div class="logo">
             <img id="image0" width="188" height="35" src="~assets/img/logo.svg">
         </div>
@@ -18,7 +18,7 @@
                 <li class="border-solid border border-white-600 rounded-full py-2 px-4">Login</li>
             </ul>
         </div>
-</div>
+</nav>
 </template>
 <style>
 .menu ul{

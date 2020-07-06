@@ -1,5 +1,5 @@
 <template>
-    <footer class="mt-6 w-screen" style="background: #F5F5F7">
+    <footer class="mt-6 pt-10 w-screen" style="background: #F5F5F7">
         <div class="container px-0 pr-2">
             <div class="flex justify-between py-5">
                     <div class="logo">
@@ -11,20 +11,20 @@
                 
             </div>
             <div class="text-sm my-2">De segunda à sexta-feira, das 9 às 20 horas / Sábados, das 9 às 17 horas, exceto feriados.</div>
-            <div class="text-sm text-gray-400 my-2">Voceazul.com.br pertence à Você Azul LTDA (“Você Azul”), CNPJ 30.518.275/0001-82, com sede a Avenida Rondon Pacheco, 3338, Loja 01, Uberlândia, MG, CEP: 38408-404 e escritório a Rua Teodoro Sampaio, 2767, 2º andar, Pinheiros, São Paulo, SP, CEP: 05405-250. A Você Azul não é uma instituição financeira, somos correspondente bancário nos termos da Resolução 3.954, de 24 de fevereiro de 2011. Prazo de pagamento: de 03 meses a 72 meses. O custo efetivo pode variar de 1,93% a.m. (25,80% a.a.) até 5,9% a.m (98,8% a.a.). Exemplo: Um empréstimo de R$ 10.000,00 em 24 meses terá parcelas de R$ 618,48, um valor total de R$ 14.843,52, juros de 3,4% a.m. (49,9% a.a.) e CET de 4,2% a.m (64,4% a.a.). Estes valores são exemplificativos e poderão variar de acordo com os critérios de aprovação de crédito da instituição financeira.</div>
-            <hr class="w-full bg-gray-400 my-2">
-            <div class="flex justify-between my-2">
-            <div class=" text-gray-400">
-                Você Azul 2020©. Todos os direitos reservados. 
+            <div class="text-sm text-gray-400 my-10">Voceazul.com.br pertence à Você Azul LTDA (“Você Azul”), CNPJ 30.518.275/0001-82, com sede a Avenida Rondon Pacheco, 3338, Loja 01, Uberlândia, MG, CEP: 38408-404 e escritório a Rua Teodoro Sampaio, 2767, 2º andar, Pinheiros, São Paulo, SP, CEP: 05405-250. A Você Azul não é uma instituição financeira, somos correspondente bancário nos termos da Resolução 3.954, de 24 de fevereiro de 2011. Prazo de pagamento: de 03 meses a 72 meses. O custo efetivo pode variar de 1,93% a.m. (25,80% a.a.) até 5,9% a.m (98,8% a.a.). Exemplo: Um empréstimo de R$ 10.000,00 em 24 meses terá parcelas de R$ 618,48, um valor total de R$ 14.843,52, juros de 3,4% a.m. (49,9% a.a.) e CET de 4,2% a.m (64,4% a.a.). Estes valores são exemplificativos e poderão variar de acordo com os critérios de aprovação de crédito da instituição financeira.</div>
+            <hr class="w-full bg-gray-400 my-6">
+            <div class="flex justify-between ">
+                <div class=" text-gray-400 ">
+                    Você Azul 2020©. Todos os direitos reservados. 
+                </div>
+                <div class="social ">
+                    <ul class="social-icons grid grid-cols-3 gap-3">
+                        <li><img src="~assets/img/fb-blue.svg" class="fill-blue" alt="Facebook" /></li>
+                        <li><img src="~assets/img/tt-blue.svg" alt="Twitter" /></li>
+                        <li><img src="~assets/img/insta-blue.svg" alt="Insta" /></li>
+                    </ul>
+                </div>
             </div>
-            <div class="social ">
-                <ul class="social-icons grid grid-cols-3 gap-3">
-                    <li><img src="~assets/img/fb-blue.svg" class="fill-blue" alt="Facebook" /></li>
-                    <li><img src="~assets/img/tt-blue.svg" alt="Twitter" /></li>
-                    <li><img src="~assets/img/insta-blue.svg" alt="Insta" /></li>
-                </ul>
-             </div>
-         </div>
          <div class=" text-gray-400 flex items-center">
                 <div>
                     Feito com

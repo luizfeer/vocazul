@@ -1,5 +1,5 @@
 <template>
-<div class="container p-0 mt-24">
+<main class="container p-0 mt-24">
 
     <div class="flex justify-between ">
         <ul class="p-2 pr-6 pl-0">
@@ -8,7 +8,7 @@
             <li class="my-3">Entenda como o Você Azul funciona e não perca tempo, faça agora mesmo uma solicitação de crédito pessoal.</li>
             <li class="rounded-full my-2 py-2 px-4 bg-yellow uppercase w-full text-base text-white text-center font-semibold" >realizar um emprestimo</li>
         </ul>
-        <ul class="bg-white p-6 m-2 rounded-lg">
+        <ul class="bg-white p-6 m-2 rounded-lg shadow-md ">
             <li>
                 <img src="~assets/img/tablet.svg" alt="tablet">
             </li>
@@ -19,7 +19,7 @@
                 Você pode realizar seu cadastro diretamente pelo site ou baixando o app da Você Azul no seu celular pelo Google Play.
             </li>
         </ul>
-        <ul class="bg-white p-6 m-2 rounded-lg">
+        <ul class="bg-white p-6 m-2 rounded-lg shadow-md">
             <li>
             <img src="~assets/img/man.svg" alt="man">
             </li>
@@ -31,7 +31,7 @@
             </li>
         
         </ul>
-         <ul class="bg-white  p-6 m-2 mr-0 rounded-lg">
+         <ul class="bg-white  p-6 m-2 mr-0 rounded-lg shadow-md">
              <li>
             <img src="~assets/img/money.svg" alt="money">
              </li>
@@ -43,7 +43,7 @@
             </li>
         </ul>
     </div>
-    <ul class="about p-6 rounded-lg bg-center bg-size-cover bg-cover mt-6">
+    <ul class="about p-6 rounded-lg shadow-md bg-center bg-size-cover bg-cover mt-6">
         <li class="text-blue-5 uppercase font-medium text-xl ">
             saiba
         </li>
@@ -62,26 +62,29 @@
             Blog
         </li>
         <li class="grid justify-between  grid-cols-4 gap-6">
-            <ul class="min-w-60  bg-white rounded-lg">
+           <article> 
+               <ul class="min-w-60  bg-white rounded-lg shadow-md">
                 <li class="">
                     <img src="~assets/img/money.jpg" class="w-full rounded-t-lg" alt="money">
                 </li>
-                 <li class="py-4 px-6 font-bold text-2xl text-blue-5">
+                 <li class="my-4 mx-6 font-bold text-2xl text-blue-5">
                     O que é empréstimo pessoal
                 </li>
-                <li class="px-6">
+                <li class="mx-6">
                     Muito se fala sobre empréstimo pessoal, entretanto, pouco se fala sobre o que é o empréstimo pessoal.
                 </li>
-                <li>
+                <li class="border-blue-5 border-t-2 w-8 m-6">
 
                 </li>
-                <li class="p-6 flex items-center">
+                <li class="p-6 pt-0 flex items-center">
                     <span class="text-sm mr-3">Leia mais</span><img src="~assets/img/arrow.svg" alt="">
                 </li>
             
             </ul>
 
-            <ul class="min-w-60  bg-white rounded-lg">
+           </article> 
+           <article>
+                <ul class="min-w-60  bg-white rounded-lg shadow-md">
                 <li class="">
                     <img src="~assets/img/tablet.jpg" class="w-full rounded-t-lg" alt="tablet">
                 </li>
@@ -91,15 +94,17 @@
                 <li class="px-6">
                     Dentre os diversos tipos de fundos de investimento disponíveis no mercado, o fundo DI está entre os mais comuns.
                 </li>
-                <li>
+                <li class="border-blue-5 border-t-2 w-8 m-6">
 
                 </li>
-                <li class="p-6 flex items-center">
+                <li class="p-6 pt-0 flex items-center">
                     <span class="text-sm mr-3">Leia mais</span><img src="~assets/img/arrow.svg" alt="">
                 </li>
             
             </ul> 
-            <ul class="min-w-60  bg-white rounded-lg">
+           </article>
+            <article> 
+                <ul class="min-w-60  bg-white rounded-lg shadow-md">
                 <li class="">
                     <img src="~assets/img/note.jpg" class="w-full rounded-t-lg" alt="note">
                 </li>
@@ -109,15 +114,17 @@
                 <li class="px-6">
                    Governo prorroga prazo de entrega para 30 de junho. Para tirar todas as dúvidas sobre quem precisa e quem não precisa fazer...
                 </li>
-                <li>
+                <li class="border-blue-5 border-t-2 w-8 m-6">
 
                 </li>
-                <li class="p-6 flex items-center">
+                <li class="p-6 pt-0 flex items-center">
                     <span class="text-sm mr-3">Leia mais</span><img src="~assets/img/arrow.svg" alt="">
                 </li>
             
             </ul>
-                          <ul class="min-w-60  bg-white rounded-lg">
+            </article> 
+            <article>
+             <ul class="min-w-60  bg-white rounded-lg shadow-md">
                 <li class="">
                     <img src="~assets/img/phone.jpg" class="w-full rounded-t-lg" alt="phone">
                 </li>
@@ -127,18 +134,20 @@
                 <li class="px-6">
                     O primeiro empréstimo pessoal é aquele que nos deixa inseguros e desconfiados, entretanto, o empréstimo pessoal...
                 </li>
-                <li>
+                <li class="border-blue-5 border-t-2 w-8 m-6">
 
                 </li>
-                <li class="p-6 flex items-center">
+                <li class="p-6 pt-0 flex items-center">
                     <span class="text-sm mr-3">Leia mais</span><img src="~assets/img/arrow.svg" alt="">
                 </li>
             
             </ul> 
+            </article> 
         </li>
 
     </ul>
- </div>
+   
+ </main>
 </template>
 <style scoped>
  ul.about {

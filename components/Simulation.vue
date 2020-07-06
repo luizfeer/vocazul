@@ -2,7 +2,7 @@
 <div>
 
 <div class="flex justify-end ">
-    <div class="w-4-5 md:w-3/5 bg-white b-0 p-6 rounded-l-lg -mt-24">
+    <div class="w-4-5 md:w-3/5 bg-white b-0 p-6 rounded-l-lg -mt-24 shadow-sm">
              <div class="">
                 <div class="flex justify-between">
                     <div class="info">
