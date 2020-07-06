@@ -4,6 +4,7 @@
         <Navbar/>
         <Center/>
         <Simulation/>
+        <Content/>
       </div>
         
     </header>      
@@ -17,11 +18,13 @@
 import Navbar from '~/components/Navbar.vue'
 import Center from '~/components/Center.vue'
 import Simulation from '~/components/Simulation.vue'
+import Content from '~/components/Content.vue'
 export default {
   components: {
     Navbar,
     Center,
-    Simulation
+    Simulation,
+    Content
   }
 }
 

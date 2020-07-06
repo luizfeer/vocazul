@@ -25,8 +25,8 @@
                             <span class="bg-blue-500 h-2 absolute left-0 top-0 rounded-full" style="width:50%"></span>
                         </div>
                         <div class="flex justify-between mt-2 text-xs text-blue-500 ">
-                            <span class="w-8 text-left">300</span>
-                            <span class="w-8 text-right">3000</span>
+                            <span class="w-8 text-left">$300</span>
+                            <span class="w-8 text-right">$3000</span>
                         </div>
                     </div>
                 </div> 
