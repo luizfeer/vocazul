@@ -16,7 +16,9 @@ module.exports = {
 
     fontFamily: {
       'base': ['Ubuntu', 'Helvetica', 'Arial', 'sans-serif'],
-      'alternate': ['Roboto', 'Helvetica', 'Arial', 'sans-serif']
+      'alternate': ['RobotoSlab', 'Roboto', 'Helvetica', 'Arial', 'sans-serif'],
+
+
     },
 
     fontSize: {
