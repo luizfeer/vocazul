@@ -17,7 +17,7 @@ module.exports = {
     fontFamily: {
       'base': ['Ubuntu', 'Helvetica', 'Arial', 'sans-serif'],
       'alternate': ['RobotoSlab', 'Roboto', 'Helvetica', 'Arial', 'sans-serif'],
-
+      'gordita' : ['Gordita', 'Roboto', 'Helvetica', 'Arial', 'sans-serif'],
 
     },
 

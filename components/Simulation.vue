@@ -31,15 +31,15 @@ export default {
                 <div class="flex justify-between">
                     <div class="info">
                         <div class="text-blue-5 font-bold uppercase">
-                        Faça uma simulaçao
+                        Faça uma simulação
                       
                         </div>
-                        <div class="text-xl">
+                        <div class="text-xl font-gordita font-bold">
                         De quanto você está precisando?
                         </div>
                     </div>
                     <div class=value>
-                        <span style="color: #FFCE1A" class="text-lg">R$</span> <span class="text-blue-5 font-bold uppercase text-4xl">{{value}}</span>
+                        <span style="color: #FFCE1A" class="text-lg">R$</span> <span class="text-blue-5 font-bold uppercase text-4xl">{{value}},00</span>
                     </div>
                 </div>
 
@@ -48,9 +48,9 @@ export default {
                         <div class=" w-full ">
                             <input class="w-full" type="range" min="300" max="3000" step="1" v-model="value">
                         </div>
-                        <div class="flex justify-between mt-2 text-xs text-blue-10">
-                            <span class="w-8 text-left">$300</span>
-                            <span class="w-8 text-right">$3000</span>
+                        <div class="flex justify-between mt-2 text-xs ">
+                            <span class=" text-blue-5 text-left font-gordita">$300,00</span>
+                            <span class="text-blue-5 text-right font-gordita">$3000,00</span>
                         </div>
                     </div>
                 </div> 

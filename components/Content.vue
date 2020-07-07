@@ -3,145 +3,145 @@
     
     <div class="flex justify-between overflow-x-auto ">
         <ul class="p-2 pr-6 pl-0 min-w-2 md:min-w-1">
-            <li class="text-blue-5 uppercase font-medium text-xs ">veja</li>
-            <li class="text-2xl font-alternate">Como funciona</li>
-            <li class="my-3">Entenda como o Você Azul funciona e não perca tempo, faça agora mesmo uma solicitação de crédito pessoal.</li>
+            <li class="text-blue-5 uppercase font-bold text-xs ">veja</li>
+            <li class="text-2xl font-gordita">Como funciona</li>
+            <li class="my-3 font-gordita">Entenda como o Você Azul funciona e não perca tempo, faça agora mesmo uma solicitação de crédito pessoal.</li>
             <li class="rounded-full my-2 py-2 px-4 bg-yellow uppercase w-full text-base text-white text-center font-semibold" >realizar um emprestimo</li>
         </ul>
-        <ul class="bg-white p-6 m-2 rounded-lg shadow-md min-w-2 md:min-w-1 ">
+        <ul class="bg-white p-6 m-2 rounded-lg shadow-md min-w-2 md:min-w-1 flex flex-col justify-between ">
             <li>
                 <img src="~assets/img/tablet.svg" alt="tablet">
             </li>
             <li class="font-bold text-2xl text-blue-5">
                 Baixe o app ou acesse pelo site
             </li>
-             <li>
+             <li class="font-gordita">
                 Você pode realizar seu cadastro diretamente pelo site ou baixando o app da Você Azul no seu celular pelo Google Play.
             </li>
         </ul>
-        <ul class="bg-white p-6 m-2 rounded-lg shadow-md min-w-2 md:min-w-1">
+        <ul class="bg-white p-6 m-2 rounded-lg shadow-md min-w-2 md:min-w-1 flex flex-col justify-between">
             <li>
             <img src="~assets/img/man.svg" alt="man">
             </li>
              <li class="font-bold text-2xl text-blue-5">
-                Baixe o app ou acesse pelo site
+              Análise do seu  Perfil
             </li>
-             <li>
-                Você pode realizar seu cadastro diretamente pelo site ou baixando o app da Você Azul no seu celular pelo Google Play.
+             <li class="font-gordita">
+                Seu cadastro passa por uma pré-análise bem rapidinha. Onde estaremos determinando o valor máximo do empréstimo.
             </li>
         
         </ul>
-         <ul class="bg-white  p-6 m-2 rounded-lg shadow-md  min-w-2 md:min-w-1 mr-6 ">
+         <ul class="bg-white  p-6 m-2 rounded-lg shadow-md  min-w-2 md:min-w-1 mr-6 flex flex-col justify-between ">
              <li>
             <img src="~assets/img/money.svg" alt="money">
              </li>
               <li class="font-bold text-2xl text-blue-5">
-                Baixe o app ou acesse pelo site
+               Dinheiro na conta
             </li>
-             <li>
-                Você pode realizar seu cadastro diretamente pelo site ou baixando o app da Você Azul no seu celular pelo Google Play.
-            </li>
+             <li class="font-gordita">
+               Depois de tudo pronto, o dinheiro chega rapidinho na sua conta ou no seu cartão pré-pago da Você Azul. É fácil, rápido e seguro!
+               </li>
         </ul>
     </div>
     <ul class="about p-6 rounded-lg shadow-md bg-center bg-size-cover bg-cover mt-6 mr-6">
-        <li class="text-blue-5 uppercase font-medium text-xl ">
+        <li class="text-blue-5 uppercase font-medium text-xs ">
             saiba
         </li>
-        <li class="text-2xl text-white font-bold">
+        <li class="text-2xl text-white font-bold font-gordita">
             Quem somos
         </li>
-        <li class="text-white mt-6">
+        <li class="text-white mt-6 font-gordita">
              A Você Azul nasceu em 2018 com a ideia de facilitar a maneira das pessoas realizarem empréstimos financeiros, que normalmente são carregados de burocracia e papelas. De uma maneira inovadora, a Você Azul disponibiliza um método rápido, fácil e seguro para as pessoas realizarem seus empréstimos
         </li>
     </ul>
     <ul class="mt-6">
-         <li class="text-blue-5 uppercase font-medium text-xl ">
+         <li class="text-blue-5 uppercase font-medium text-xs ">
             nosso
         </li>
-        <li class="text-2xl font-bold">
+        <li class="text-2xl font-gordita">
             Blog
         </li>
         <li class="flex justify-between overflow-x-auto md:overflow-x-unset items-stretch lg:pr-6 ">
-           <article class="bg-white rounded-lg shadow-md m-2 min-w-3/4 md:min-w-80 md:min-w-1/2 lg:min-w-1/5 xl:min-w-1/4 xl:max-w-1/4 "> 
-               <ul class="">
-                <li class="">
+           <article class="bg-white rounded-lg shadow-md m-2 min-w-3/4 md:min-w-80 md:min-w-1/2 lg:min-w-1/5 xl:min-w-1/4 xl:max-w-1/4 flex-col justify-between flex"> 
+              
+                <div class="">
                     <img src="~assets/img/money.jpg" class="w-full rounded-t-lg" alt="money">
-                </li>
-                 <li class="my-4 mx-6 font-bold text-2xl text-blue-5">
+                </div>
+                 <div class="my-4 mx-6 font-bold text-2xl text-blue-5">
                     O que é empréstimo pessoal
-                </li>
-                <li class="mx-6">
+                </div>
+                <div class="font-gordita mx-6">
                     Muito se fala sobre empréstimo pessoal, entretanto, pouco se fala sobre o que é o empréstimo pessoal.
-                </li>
-                <li class="border-blue-5 border-t-2 w-8 m-6">
-
-                </li>
-                <li class="p-6 pt-0 flex items-center">
-                    <span class="text-sm mr-3">Leia mais</span><img src="~assets/img/arrow.svg" alt="">
-                </li>
+                </div>
+               <div>
+                    <div class="border-blue-5 border-t-2 w-8 m-6"></div>
+                        <div class="p-6 pt-0 flex items-center">
+                        <span class="text-sm mr-3">Leia mais</span><img src="~assets/img/arrow.svg" alt="">
+                    </div>
+                </div>
             
-            </ul>
+            
 
            </article> 
-           <article class="bg-white rounded-lg shadow-md m-2 min-w-3/4 md:min-w-80 md:min-w-1/2 lg:min-w-1/5 xl:min-w-1/4 xl:max-w-1/4">
-                <ul >
-                <li class="">
+           <article class="bg-white rounded-lg shadow-md m-2 min-w-3/4 md:min-w-80 md:min-w-1/2 lg:min-w-1/5 xl:min-w-1/4 xl:max-w-1/4 flex-col justify-between flex">
+                
+                <div class="">
                     <img src="~assets/img/tablet.jpg" class="w-full rounded-t-lg" alt="tablet">
-                </li>
-                 <li class="py-4 px-6 font-bold text-2xl text-blue-5">
+                </div>
+                 <div class="py-4 px-6 font-bold text-2xl text-blue-5">
                     Fundo DI - O que são e como funcionam
-                </li>
-                <li class="px-6">
+                </div>
+                <div class="px-6 font-gordita">
                     Dentre os diversos tipos de fundos de investimento disponíveis no mercado, o fundo DI está entre os mais comuns.
-                </li>
-                <li class="border-blue-5 border-t-2 w-8 m-6">
-
-                </li>
-                <li class="p-6 pt-0 flex items-center">
-                    <span class="text-sm mr-3">Leia mais</span><img src="~assets/img/arrow.svg" alt="">
-                </li>
+                </div>
+              <div>
+                    <div class="border-blue-5 border-t-2 w-8 m-6"></div>
+                        <div class="p-6 pt-0 flex items-center">
+                        <span class="text-sm mr-3">Leia mais</span><img src="~assets/img/arrow.svg" alt="">
+                    </div>
+                </div>
             
-            </ul> 
+            
            </article>
-            <article class="bg-white rounded-lg shadow-md m-2 min-w-3/4 md:min-w-80 md:min-w-1/2 lg:min-w-1/5 xl:min-w-1/4 xl:max-w-1/4"> 
-                <ul>
-                <li class="">
+            <article class="bg-white rounded-lg shadow-md m-2 min-w-3/4 md:min-w-80 md:min-w-1/2 lg:min-w-1/5 xl:min-w-1/4 xl:max-w-1/4 flex-col justify-between flex"> 
+               
+                <div class="">
                     <img src="~assets/img/note.jpg" class="w-full rounded-t-lg" alt="note">
-                </li>
-                 <li class="py-4 px-6 font-bold text-2xl text-blue-5">
+                </div>
+                 <div class="py-4 px-6 font-bold text-2xl text-blue-5">
                    Quem deve declarar o IR 2020?
-                </li>
-                <li class="px-6">
+                </div>
+                <div class="px-6 font-gordita">
                    Governo prorroga prazo de entrega para 30 de junho. Para tirar todas as dúvidas sobre quem precisa e quem não precisa fazer...
-                </li>
-                <li class="border-blue-5 border-t-2 w-8 m-6">
-
-                </li>
-                <li class="p-6 pt-0 flex items-center">
-                    <span class="text-sm mr-3">Leia mais</span><img src="~assets/img/arrow.svg" alt="">
-                </li>
+                </div>
+               <div>
+                    <div class="border-blue-5 border-t-2 w-8 m-6"></div>
+                        <div class="p-6 pt-0 flex items-center">
+                        <span class="text-sm mr-3">Leia mais</span><img src="~assets/img/arrow.svg" alt="">
+                    </div>
+                </div>
             
-            </ul>
+           
             </article> 
-            <article class="bg-white rounded-lg shadow-md m-2 min-w-3/4 md:min-w-80 md:min-w-1/2 lg:min-w-1/5 xl:min-w-1/4 xl:max-w-1/4">
-             <ul >
-                <li class="">
-                    <img src="~assets/img/phone.jpg" class="w-full rounded-t-lg" alt="phone">
-                </li>
-                 <li class="py-4 px-6 font-bold text-2xl text-blue-5">
-                    Dicas para seu primeiro empréstimo
-                </li>
-                <li class="px-6">
-                    O primeiro empréstimo pessoal é aquele que nos deixa inseguros e desconfiados, entretanto, o empréstimo pessoal...
-                </li>
-                <li class="border-blue-5 border-t-2 w-8 m-6">
-
-                </li>
-                <li class="p-6 pt-0 flex items-center">
-                    <span class="text-sm mr-3">Leia mais</span><img src="~assets/img/arrow.svg" alt="">
-                </li>
+            <article class="bg-white rounded-lg shadow-md m-2 min-w-3/4 md:min-w-80 md:min-w-1/2 lg:min-w-1/5 xl:min-w-1/4 xl:max-w-1/4 flex-col justify-between flex">
             
-            </ul> 
+                <div class="">
+                    <img src="~assets/img/phone.jpg" class="w-full rounded-t-lg" alt="phone">
+                </div>
+                 <div class="py-4 px-6 font-bold text-2xl text-blue-5">
+                    Dicas para seu primeiro empréstimo
+                </div>
+                <div class="px-6 font-gordita">
+                    O primeiro empréstimo pessoal é aquele que nos deixa inseguros e desconfiados, entretanto, o empréstimo pessoal...
+                </div>
+                <div>
+                    <div class="border-blue-5 border-t-2 w-8 m-6"></div>
+                        <div class="p-6 pt-0 flex items-center">
+                        <span class="text-sm mr-3">Leia mais</span><img src="~assets/img/arrow.svg" alt="">
+                    </div>
+                </div>
+            
+            
             </article> 
         </li>
 

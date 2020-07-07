@@ -1,5 +1,5 @@
 <template>
-    <footer class="my-6 py-10   w-screen" style="background: #F5F5F7">
+    <footer class="my-6 py-10 font-gordita w-screen" style="background: #F5F5F7">
         <div class="container px-0 pr-2">
             <div class="flex justify-between py-5">
                     <div class="logo">

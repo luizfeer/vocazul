@@ -4,3 +4,7 @@
 @import './variables';
 @import './base';
 
+@font-face {
+    font-family: Gordita;
+    src: url(~assets/font/Gordita.otf) format("opentype");
+  }
