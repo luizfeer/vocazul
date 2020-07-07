@@ -3,22 +3,29 @@ export default {
     data(){
         return {
             value:300,
+            
+
 
         }
+    },
+    mounted() {
+        
     }
 }
 </script>
 <template>
 <div>
 
-<div class=" sm:flex justify-end ">
-    <div class="w-4-5 md:w-3/5 bg-white b-0 p-6 rounded-l-lg -mt-48 sm:-mt-24 shadow-sm">
+<div class="flex justify-end ">
+    <!-- <div class="w-4-5 md:w-3/5 bg-white b-0 p-6 rounded-l-lg -mt-48 ml-10 md:-mt-24 shadow-sm right-0 absolute lg:relative "> -->
+    <div class="w-4-5 md:w-3/5 bg-white b-0 p-6 rounded-l-lg -mt-48 ml-10 md:-mt-24 shadow-sm right-0 absolute ">
 
-             <div class="">
+             <div class="max-w-full md:max-w-3/4 " style="width:60%">
                 <div class="flex justify-between">
                     <div class="info">
                         <div class="text-blue-5 font-bold uppercase">
                         Faça uma simulaçao
+                      
                         </div>
                         <div class="text-xl">
                         De quanto você está precisando?

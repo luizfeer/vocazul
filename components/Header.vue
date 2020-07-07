@@ -1,7 +1,7 @@
 <template>
 <div>
 <header class="mx-auto max-w-full lg:w-2/2 bg-cover md:pb-0  bg-no-repeat pt-8 pb-6 bg-right-top bg-size-cover">
-      <div class="container m-auto h-full flex flex-col md:justify-between p-4 md:p-auto">
+      <div class="container m-auto h-full flex flex-col md:justify-between md:p-auto">
         <Navbar/>
         <Center/>
         <Simulation/>

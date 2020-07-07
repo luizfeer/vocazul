@@ -1,6 +1,6 @@
 <template>
-<main class="container p-0 p-6 md:p-0 mt-24 ">
-
+<main class="container p-6 pr-0 md:p-0 mt-16 md:mt-44 ">
+    
     <div class="flex justify-between overflow-x-auto ">
         <ul class="p-2 pr-6 pl-0 min-w-3/4 md:min-w-0">
             <li class="text-blue-5 uppercase font-medium text-xs ">veja</li>
@@ -31,7 +31,7 @@
             </li>
         
         </ul>
-         <ul class="bg-white  p-6 m-2 mr-0 rounded-lg shadow-md  min-w-3/4 md:min-w-0 ">
+         <ul class="bg-white  p-6 m-2 rounded-lg shadow-md  min-w-3/4 md:min-w-0 mr-6 ">
              <li>
             <img src="~assets/img/money.svg" alt="money">
              </li>
@@ -43,7 +43,7 @@
             </li>
         </ul>
     </div>
-    <ul class="about p-6 rounded-lg shadow-md bg-center bg-size-cover bg-cover mt-6">
+    <ul class="about p-6 rounded-lg shadow-md bg-center bg-size-cover bg-cover mt-6 mr-6">
         <li class="text-blue-5 uppercase font-medium text-xl ">
             saiba
         </li>
@@ -61,9 +61,9 @@
         <li class="text-2xl font-bold">
             Blog
         </li>
-        <li class="grid justify-between  grid-cols-4 gap-6 overflow-x-auto">
-           <article> 
-               <ul class="min-w-60  bg-white rounded-lg shadow-md">
+        <li class="flex justify-between overflow-x-auto items-stretch ">
+           <article class="min-w-3/4 md:min-w-0 bg-white rounded-lg shadow-md m m-2"> 
+               <ul class="">
                 <li class="">
                     <img src="~assets/img/money.jpg" class="w-full rounded-t-lg" alt="money">
                 </li>
@@ -83,8 +83,8 @@
             </ul>
 
            </article> 
-           <article>
-                <ul class="min-w-60  bg-white rounded-lg shadow-md">
+           <article class="min-w-3/4 md:min-w-0 bg-white rounded-lg shadow-md m m-2">
+                <ul >
                 <li class="">
                     <img src="~assets/img/tablet.jpg" class="w-full rounded-t-lg" alt="tablet">
                 </li>
@@ -103,8 +103,8 @@
             
             </ul> 
            </article>
-            <article> 
-                <ul class="min-w-60  bg-white rounded-lg shadow-md">
+            <article class="min-w-3/4 md:min-w-0 bg-white rounded-lg shadow-md m m-2"> 
+                <ul>
                 <li class="">
                     <img src="~assets/img/note.jpg" class="w-full rounded-t-lg" alt="note">
                 </li>
@@ -123,8 +123,8 @@
             
             </ul>
             </article> 
-            <article>
-             <ul class="min-w-60  bg-white rounded-lg shadow-md">
+            <article class="min-w-3/4 md:min-w-0 bg-white rounded-lg shadow-md m m-2">
+             <ul >
                 <li class="">
                     <img src="~assets/img/phone.jpg" class="w-full rounded-t-lg" alt="phone">
                 </li>
