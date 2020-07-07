@@ -3,13 +3,19 @@ export default {
     data(){
         return {
             value:300,
-            
+            margin: '0'         
 
 
         }
     },
     mounted() {
-        
+         var header = document.getElementById("header");
+         this.margin = window.getComputedStyle(header, null).getPropertyValue("margin-right");
+
+         window.onresize = () => {
+                     this.margin = window.getComputedStyle(header, null).getPropertyValue("margin-right");
+         //    le a margin do elemento header para aplicala ao balão de simulação
+         }
     }
 }
 </script>
@@ -17,10 +23,11 @@ export default {
 <div>
 
 <div class="flex justify-end ">
-    <!-- <div class="w-4-5 md:w-3/5 bg-white b-0 p-6 rounded-l-lg -mt-48 ml-10 md:-mt-24 shadow-sm right-0 absolute lg:relative "> -->
+   
     <div class="w-4-5 md:w-3/5 bg-white b-0 p-6 rounded-l-lg -mt-48 ml-10 md:-mt-24 shadow-sm right-0 absolute ">
 
-             <div class="max-w-full md:max-w-3/4 " style="width:60%">
+             <div class="max-w-full" :style="'margin-right:'+ margin"> 
+                 <!-- bind do style com a margin -->
                 <div class="flex justify-between">
                     <div class="info">
                         <div class="text-blue-5 font-bold uppercase">
