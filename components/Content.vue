@@ -2,13 +2,13 @@
 <main class="container p-6 pr-0 md:p-0 mt-16 md:mt-44 ">
     
     <div class="flex justify-between overflow-x-auto ">
-        <ul class="p-2 pr-6 pl-0 min-w-3/4 md:min-w-0">
+        <ul class="p-2 pr-6 pl-0 min-w-2 md:min-w-1">
             <li class="text-blue-5 uppercase font-medium text-xs ">veja</li>
             <li class="text-2xl font-alternate">Como funciona</li>
             <li class="my-3">Entenda como o Você Azul funciona e não perca tempo, faça agora mesmo uma solicitação de crédito pessoal.</li>
             <li class="rounded-full my-2 py-2 px-4 bg-yellow uppercase w-full text-base text-white text-center font-semibold" >realizar um emprestimo</li>
         </ul>
-        <ul class="bg-white p-6 m-2 rounded-lg shadow-md min-w-3/4 md:min-w-0 ">
+        <ul class="bg-white p-6 m-2 rounded-lg shadow-md min-w-2 md:min-w-1 ">
             <li>
                 <img src="~assets/img/tablet.svg" alt="tablet">
             </li>
@@ -19,7 +19,7 @@
                 Você pode realizar seu cadastro diretamente pelo site ou baixando o app da Você Azul no seu celular pelo Google Play.
             </li>
         </ul>
-        <ul class="bg-white p-6 m-2 rounded-lg shadow-md min-w-3/4 md:min-w-0">
+        <ul class="bg-white p-6 m-2 rounded-lg shadow-md min-w-2 md:min-w-1">
             <li>
             <img src="~assets/img/man.svg" alt="man">
             </li>
@@ -31,7 +31,7 @@
             </li>
         
         </ul>
-         <ul class="bg-white  p-6 m-2 rounded-lg shadow-md  min-w-3/4 md:min-w-0 mr-6 ">
+         <ul class="bg-white  p-6 m-2 rounded-lg shadow-md  min-w-2 md:min-w-1 mr-6 ">
              <li>
             <img src="~assets/img/money.svg" alt="money">
              </li>
@@ -61,8 +61,8 @@
         <li class="text-2xl font-bold">
             Blog
         </li>
-        <li class="flex justify-between overflow-x-auto items-stretch ">
-           <article class="min-w-3/4 md:min-w-0 bg-white rounded-lg shadow-md m m-2"> 
+        <li class="flex justify-between overflow-x-auto md:overflow-x-unset items-stretch flex-1 ">
+           <article class="bg-white rounded-lg shadow-md m-2 min-w-3/4 md:min-w-80 md:min-w-1/2 lg:min-w-1/5 xl:min-w-10"> 
                <ul class="">
                 <li class="">
                     <img src="~assets/img/money.jpg" class="w-full rounded-t-lg" alt="money">
@@ -83,7 +83,7 @@
             </ul>
 
            </article> 
-           <article class="min-w-3/4 md:min-w-0 bg-white rounded-lg shadow-md m m-2">
+           <article class="bg-white rounded-lg shadow-md m-2 min-w-3/4 md:min-w-80 md:min-w-1/2 lg:min-w-1/5">
                 <ul >
                 <li class="">
                     <img src="~assets/img/tablet.jpg" class="w-full rounded-t-lg" alt="tablet">
@@ -103,7 +103,7 @@
             
             </ul> 
            </article>
-            <article class="min-w-3/4 md:min-w-0 bg-white rounded-lg shadow-md m m-2"> 
+            <article class="bg-white rounded-lg shadow-md m-2 min-w-3/4 md:min-w-80 md:min-w-1/2 lg:min-w-1/5"> 
                 <ul>
                 <li class="">
                     <img src="~assets/img/note.jpg" class="w-full rounded-t-lg" alt="note">
@@ -123,7 +123,7 @@
             
             </ul>
             </article> 
-            <article class="min-w-3/4 md:min-w-0 bg-white rounded-lg shadow-md m m-2">
+            <article class="bg-white rounded-lg shadow-md m-2 min-w-3/4 md:min-w-80 md:min-w-1/2 lg:min-w-1/5">
              <ul >
                 <li class="">
                     <img src="~assets/img/phone.jpg" class="w-full rounded-t-lg" alt="phone">
