@@ -61,8 +61,8 @@
         <li class="text-2xl font-bold">
             Blog
         </li>
-        <li class="flex justify-between overflow-x-auto md:overflow-x-unset items-stretch flex-1 ">
-           <article class="bg-white rounded-lg shadow-md m-2 min-w-3/4 md:min-w-80 md:min-w-1/2 lg:min-w-1/5 xl:min-w-10"> 
+        <li class="flex justify-between overflow-x-auto md:overflow-x-unset items-stretch lg:pr-6 ">
+           <article class="bg-white rounded-lg shadow-md m-2 min-w-3/4 md:min-w-80 md:min-w-1/2 lg:min-w-1/5 xl:min-w-1/4 xl:max-w-1/4 "> 
                <ul class="">
                 <li class="">
                     <img src="~assets/img/money.jpg" class="w-full rounded-t-lg" alt="money">
@@ -83,7 +83,7 @@
             </ul>
 
            </article> 
-           <article class="bg-white rounded-lg shadow-md m-2 min-w-3/4 md:min-w-80 md:min-w-1/2 lg:min-w-1/5">
+           <article class="bg-white rounded-lg shadow-md m-2 min-w-3/4 md:min-w-80 md:min-w-1/2 lg:min-w-1/5 xl:min-w-1/4 xl:max-w-1/4">
                 <ul >
                 <li class="">
                     <img src="~assets/img/tablet.jpg" class="w-full rounded-t-lg" alt="tablet">
@@ -103,7 +103,7 @@
             
             </ul> 
            </article>
-            <article class="bg-white rounded-lg shadow-md m-2 min-w-3/4 md:min-w-80 md:min-w-1/2 lg:min-w-1/5"> 
+            <article class="bg-white rounded-lg shadow-md m-2 min-w-3/4 md:min-w-80 md:min-w-1/2 lg:min-w-1/5 xl:min-w-1/4 xl:max-w-1/4"> 
                 <ul>
                 <li class="">
                     <img src="~assets/img/note.jpg" class="w-full rounded-t-lg" alt="note">
@@ -123,7 +123,7 @@
             
             </ul>
             </article> 
-            <article class="bg-white rounded-lg shadow-md m-2 min-w-3/4 md:min-w-80 md:min-w-1/2 lg:min-w-1/5">
+            <article class="bg-white rounded-lg shadow-md m-2 min-w-3/4 md:min-w-80 md:min-w-1/2 lg:min-w-1/5 xl:min-w-1/4 xl:max-w-1/4">
              <ul >
                 <li class="">
                     <img src="~assets/img/phone.jpg" class="w-full rounded-t-lg" alt="phone">
