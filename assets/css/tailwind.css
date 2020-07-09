@@ -5,6 +5,30 @@
 @import './base';
 
 @font-face {
+  font-family: RobotoSlab;
+  font-weight: normal;
+  src: url(~assets/font/RobotoSlab.ttf) format("opentype");
+}
+@font-face {
     font-family: Gordita;
-    src: url(~assets/font/Gordita.otf) format("opentype");
+    font-weight: normal;
+    src: url(~assets/font/Gordita-Regular.otf) format("opentype");
+  }
+
+  @font-face {
+    font-family: Gordita;
+    font-weight: bold;
+    src: url(~assets/font/Gordita-Bold.otf) format("opentype");
+  }
+
+  @font-face {
+    font-family: Gordita;
+    font-weight: lighter;
+    src: url(~assets/font/Gordita-Light.otf) format("opentype");
+  }
+
+  @font-face {
+    font-family: Gordita;
+    font-weight: 500;
+    src: url(~assets/font/Gordita-Medium.otf) format("opentype");
   }

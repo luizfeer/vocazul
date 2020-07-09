@@ -1,9 +1,18 @@
 <template>
 <div>
-<header  class="mx-auto max-w-full lg:w-2/2 bg-cover md:pb-0  bg-no-repeat pt-8 pb-6 bg-right-top bg-size-cover">
-      <div id="header" class="container m-auto h-full flex flex-col md:justify-between md:p-auto">
+<header  class="mx-auto max-w-full lg:w-2/2 bg-cover md:pb-0 px-10  bg-no-repeat pt-5 pb-6 bg-right-top bg-size-cover font-gordita">
+      <div id="header" class="container h-full flex flex-col md:justify-between ">
         <Navbar/>
         <Center/>
+        <div>
+
+        <div class="bg absolute left-0 ml-72 -mt-20 " >
+        <img src="~assets/img/bgr.svg" alt="">
+         </div>
+         <div class="bg absolute left-0 -mt-20" >
+        <img src="~assets/img/bgr.svg" alt="">
+         </div>
+        </div>
         <Simulation/>
         
        
@@ -44,6 +53,15 @@ header{
   height: 620px;
   
 }
+.title{
+  @apply font-robotoslab
+}
+.desc{
+  color: #979797;
+}
+ .bg{
+    z-index: -1;
+  }
 
 </style>
 

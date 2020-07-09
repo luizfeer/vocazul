@@ -6,6 +6,9 @@
 */
 module.exports = {
   theme: {
+    boxShadow: {
+      'md': '0px 4px 20px rgba(0, 0, 0, 0.03)'
+    },
     screens: {
       'xs': '480px',
       'sm': '640px',
@@ -15,9 +18,10 @@ module.exports = {
     },
 
     fontFamily: {
-      'base': ['Ubuntu', 'Helvetica', 'Arial', 'sans-serif'],
-      'alternate': ['RobotoSlab', 'Roboto', 'Helvetica', 'Arial', 'sans-serif'],
-      'gordita' : ['Gordita', 'Roboto', 'Helvetica', 'Arial', 'sans-serif'],
+       base: ['Ubuntu', 'Helvetica', 'Arial', 'sans-serif'],
+      robotoslab: ['RobotoSlab', 'Roboto', 'Helvetica', 'Arial', 'sans-serif'],
+      gordita: ['Gordita', 'Roboto', 'Helvetica', 'Arial', 'sans-serif']
+
 
     },
 
