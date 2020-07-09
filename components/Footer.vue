@@ -1,10 +1,22 @@
 <template>
-    <footer class="my-6 py-10 px-10 font-gordita w-screen" style="background: #F5F5F7">
+    <footer class="p-10 pt-10 pb-10 font-gordita w-screen" style="background: #F5F5F7">
         <div class="container px-0 pr-2">
             <div class="flex justify-between py-3 items-start">
                     <div class="logo">
                         <img id="image0" class="mb-4" width="188" height="35" src="~assets/img/logo-blue.svg">
-                        <div class="text-sm my-5">De segunda à sexta-feira, das 9 às 20 horas / Sábados, das 9 às 17 horas, exceto feriados.</div>
+                        <div class="text-sm my-5block sm:hidden ">
+                            <p>
+                            De segunda à sexta-feira, das 9 às 20 horas
+                            </p>
+                            <p>
+                            Sábados, das 9 às 17 horas, exceto feriados.
+                            </p>
+                        </div>
+                         <div class="text-sm my-5 hidden sm:block">
+                           
+                            De segunda à sexta-feira, das 9 às 20 horas / Sábados, das 9 às 17 horas, exceto feriados.
+                           
+                        </div>
                     </div>
 
                     <div class="login border-solid border border-blue-5 text-white bg-blue-5 md:bg-transparent md:text-blue-5 rounded-full py-2 px-6 uppercase hover:opacity-75">Login</div>

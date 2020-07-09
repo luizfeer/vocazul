@@ -15,9 +15,9 @@
             Tá querendo sair do vermelho e ficar de bem com a vida?
             </p>
             <!-- bg-white bg-opacity-75 -->
-            <div class="help uppercase text-white rounded-full py-2 px-4 flex justify-between items-center md:float-right my-4 md:my-2 ">
-                <div class="mr-4 text-sm md:text-base font-bold">Nós podemos te ajudar </div>
-                <nuxt-link to="#" class="rounded-full py-2 px-4 bg-yellow hover:opacity-75" >saiba mais</nuxt-link>
+            <div class="help uppercase text-white rounded-full py-2 px-2 sm:py-2 sm:px-4 flex justify-between items-center md:float-right my-4 md:my-2 ">
+                <div class="ml-2 text-xs sm:text-sm md:text-base font-bold">Nós podemos te ajudar </div>
+                <nuxt-link to="#" class="text-xs sm:text-sm rounded-full py-1 px-2 sm:py-2 sm:px-4  bg-yellow hover:opacity-75" >saiba mais</nuxt-link>
             </div>
         </div>
     </div>    

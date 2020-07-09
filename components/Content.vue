@@ -1,6 +1,5 @@
 <template>
-<main class="container pt-16 md:pt-44 px-0 ">
-    
+<main class="container pt-56 lg:pt-44 md:px-0 pl-6 pr-0">   
     
     <div class="flex justify-between overflow-x-auto ">
         <ul class="p-2 pr-6 pl-0 min-w-2 md:min-w-1">
@@ -54,7 +53,7 @@
     <div class="bg absolute -ml-20 -mt-8">
         <img src="~assets/img/circle.svg" alt="">
     </div>
-    <ul class="about p-8 rounded-lg shadow-md bg-center bg-size-cover bg-cover mt-6 mr-0 md:mr-6">
+    <ul class="about p-8 rounded-lg shadow-md bg-center bg-size-cover bg-cover mt-6 mr-6 sm:mr-0">
          
         <li class="uppercase font-bold text-xs " style="color:#A8E1FF">
             saiba
