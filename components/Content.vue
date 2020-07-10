@@ -14,7 +14,7 @@
             <li>
                 <img src="~assets/img/tablet.svg" alt="tablet">
             </li>
-            <li class="font-bold leading-relaxed text-2xl text-blue-5">
+            <li class="font-bold leading-7 text-2xl text-blue-5">
                 Baixe o app ou acesse pelo site
             </li>
              <li class="desc">
@@ -25,7 +25,7 @@
             <li>
             <img src="~assets/img/man.svg" alt="man">
             </li>
-             <li class="font-bold leading-relaxed text-2xl text-blue-5">
+             <li class="font-bold leading-7 text-2xl text-blue-5">
               Análise do seu  Perfil
             </li>
              <li class="desc">
@@ -38,7 +38,7 @@
              <li>
             <img src="~assets/img/money.svg" alt="money">
              </li>
-              <li class="font-bold leading-relaxed text-2xl text-blue-5">
+              <li class="font-bold leading-7 text-2xl text-blue-5">
                Dinheiro na conta
             </li>
              <li class="desc">
@@ -74,7 +74,7 @@
                 <div class="">
                     <img src="~assets/img/money.jpg" class="w-full rounded-t-lg" alt="money">
                 </div>
-                 <div class="leading-relaxed my-4 mx-6 font-bold text-2xl text-blue-5">
+                 <div class="leading-7 my-4 mx-6 font-bold text-2xl text-blue-5">
                     O que é empréstimo pessoal
                 </div>
                 <div class=" mx-6 desc">
@@ -95,7 +95,7 @@
                 <div class="">
                     <img src="~assets/img/tablet.jpg" class="w-full rounded-t-lg" alt="tablet">
                 </div>
-                 <div class="leading-relaxed py-4 px-6 font-bold text-2xl text-blue-5">
+                 <div class="leading-7 py-4 px-6 font-bold text-2xl text-blue-5">
                     Fundo DI - O que são e como funcionam
                 </div>
                 <div class="px-6 desc">
@@ -115,7 +115,7 @@
                 <div class="">
                     <img src="~assets/img/note.jpg" class="w-full rounded-t-lg" alt="note">
                 </div>
-                 <div class="leading-relaxed py-4 px-6 font-bold text-2xl text-blue-5">
+                 <div class="leading-7 py-4 px-6 font-bold text-2xl text-blue-5">
                    Quem deve declarar o IR 2020?
                 </div>
                 <div class="px-6 desc">
@@ -135,7 +135,7 @@
                 <div class="">
                     <img src="~assets/img/phone.jpg" class="w-full rounded-t-lg" alt="phone">
                 </div>
-                 <div class="leading-relaxed py-4 px-6 font-bold text-2xl text-blue-5">
+                 <div class="leading-7 py-4 px-6 font-bold text-2xl text-blue-5">
                     Dicas para seu primeiro empréstimo
                 </div>
                 <div class="px-6 desc">

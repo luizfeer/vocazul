@@ -19,7 +19,7 @@
                         </div>
                     </div>
 
-                    <div class="login border-solid border border-blue-5 text-white bg-blue-5 md:bg-transparent md:text-blue-5 rounded-full py-2 px-6 uppercase hover:opacity-75">Login</div>
+                    <div class="login border-solid border border-blue-5 text-white bg-blue-5 md:bg-transparent md:text-blue-5 rounded-full mt-1  pt-2 pb-1 sm:pt-2 sm:pb-2 px-6 uppercase hover:opacity-75">Login</div>
                         
                 
             </div>
