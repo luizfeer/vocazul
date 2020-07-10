@@ -24,7 +24,7 @@ export default {
    
     <div class="w-4-5 md:w-3/5 bg-white b-0 p-10 rounded-l-lg ml-10 -mt-40 sm:-mt-48 md:-mt-24 shadow-sm right-0 absolute ">
 
-             <div class="max-w-full pr-0 sm:pr-10" :style="'margin-right:'+ margin"> 
+             <div class="max-w-full pr-0 " :style="'margin-right:'+ margin"> 
                  <!-- bind do style com a margin -->
                 <div class="flex justify-between flex-col sm:flex-row">
                     <div class="info">

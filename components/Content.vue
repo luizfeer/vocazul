@@ -34,7 +34,7 @@
         
         </ul>
         
-         <ul class="bg-white  p-6 m-2 rounded-lg shadow-md  min-w-2 md:min-w-1 mr-6 flex flex-col justify-between ">
+         <ul class="bg-white  p-6 m-2 rounded-lg shadow-md  min-w-2 md:min-w-1 mr-6 sm:mr-0 flex flex-col justify-between ">
              <li>
             <img src="~assets/img/money.svg" alt="money">
              </li>
@@ -53,7 +53,7 @@
     <div class="bg absolute -ml-20 -mt-8">
         <img src="~assets/img/circle.svg" alt="">
     </div>
-    <ul class="about p-8 rounded-lg shadow-md bg-center bg-size-cover bg-cover mt-6 mr-6 sm:mr-6">
+    <ul class="about p-8 rounded-lg shadow-md bg-center bg-size-cover bg-cover mt-6 mr-6 sm:mr-0">
          
         <li class="uppercase font-bold text-xs " style="color:#A8E1FF">
             saiba
@@ -68,8 +68,8 @@
     <ul class="my-16">
           <li class="text-blue-5 uppercase font-bold text-xs ">nosso</li>
             <li class="text-2xl title">Blog</li>
-        <li class="flex justify-between overflow-x-auto md:overflow-x-unset items-stretch lg:pr-6 ">
-           <article class="bg-white rounded-lg shadow-md m-2 min-w-3/4 md:min-w-80 md:min-w-1/2 lg:min-w-1/5 xl:min-w-1/4 xl:max-w-1/4 flex-col justify-between flex"> 
+        <li class="flex justify-between overflow-x-auto md:overflow-x-unset items-stretch mr-0 ">
+           <article class="bg-white rounded-lg shadow-md ml-0 m-2 min-w-3/4 md:min-w-80 md:min-w-1/2 lg:min-w-1/5 xl:min-w-1/4 xl:max-w-1/4 flex-col justify-between flex"> 
               
                 <div class="">
                     <img src="~assets/img/money.jpg" class="w-full rounded-t-lg" alt="money">
@@ -130,7 +130,7 @@
             
            
             </article> 
-            <article class="bg-white rounded-lg shadow-md m-2 min-w-3/4 md:min-w-80 md:min-w-1/2 lg:min-w-1/5 xl:min-w-1/4 xl:max-w-1/4 flex-col justify-between flex">
+            <article class="bg-white rounded-lg shadow-md mr-6 sm:mr-0  m-2 min-w-3/4 md:min-w-80 md:min-w-1/2 lg:min-w-1/5 xl:min-w-1/4 xl:max-w-1/4 flex-col justify-between flex">
             
                 <div class="">
                     <img src="~assets/img/phone.jpg" class="w-full rounded-t-lg" alt="phone">
