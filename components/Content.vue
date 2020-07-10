@@ -53,7 +53,7 @@
     <div class="bg absolute -ml-20 -mt-8">
         <img src="~assets/img/circle.svg" alt="">
     </div>
-    <ul class="about p-8 rounded-lg shadow-md bg-center bg-size-cover bg-cover mt-6 mr-6 sm:mr-0">
+    <ul class="about p-8 rounded-lg shadow-md bg-center bg-size-cover bg-cover mt-6 mr-6 sm:mr-6">
          
         <li class="uppercase font-bold text-xs " style="color:#A8E1FF">
             saiba
@@ -65,7 +65,7 @@
              A Você Azul nasceu em 2018 com a ideia de facilitar a maneira das pessoas realizarem empréstimos financeiros, que normalmente são carregados de burocracia e papelas.<br> 
             De uma maneira inovadora, a Você Azul disponibiliza um método rápido, fácil e seguro para as pessoas realizarem seus empréstimos. </li>
     </ul>
-    <ul class="mt-16">
+    <ul class="my-16">
           <li class="text-blue-5 uppercase font-bold text-xs ">nosso</li>
             <li class="text-2xl title">Blog</li>
         <li class="flex justify-between overflow-x-auto md:overflow-x-unset items-stretch lg:pr-6 ">

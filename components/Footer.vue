@@ -3,7 +3,7 @@
         <div class="container px-0 pr-2">
             <div class="flex justify-between py-3 items-start">
                     <div class="logo">
-                        <img id="image0" class="mb-4" width="188" height="35" src="~assets/img/logo-blue.svg">
+                        <img id="image0" class="my-2" width="188" height="35" src="~assets/img/logo-blue.svg">
                         <div class="text-sm my-5block sm:hidden ">
                             <p>
                             De segunda à sexta-feira, das 9 às 20 horas
@@ -12,7 +12,7 @@
                             Sábados, das 9 às 17 horas, exceto feriados.
                             </p>
                         </div>
-                         <div class="text-sm my-5 hidden sm:block">
+                         <div class="text-sm my-6 hidden sm:block">
                            
                             De segunda à sexta-feira, das 9 às 20 horas / Sábados, das 9 às 17 horas, exceto feriados.
                            

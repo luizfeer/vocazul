@@ -3,9 +3,7 @@ export default {
     data(){
         return {
             value:300,
-            margin: '0'         
-
-
+            margin: '0' 
         }
     },
     mounted() {
@@ -56,7 +54,7 @@ export default {
                 </div> 
                 <div class="font-hairline mt-6 text-xs flex flex-col sm:flex-row justify-between items-center">                    
                     <div class="italic" style="font-size: 11px">* Essa simulação pode variar de acordo com a análise do seu perfil de crédito.</div>
-                    <nuxt-link to="#" class="rounded-full py-2 px-4 text-white uppercase text-lg whitespace-no-wrap bg-yellow mt-3 sm:mt-0 ml-auto hover:opacity-75">Solicitar agora</nuxt-link>
+                    <nuxt-link to="#" class="rounded-full  pt-2 py-1 px-4 text-white uppercase text-lg whitespace-no-wrap bg-yellow mt-3 sm:mt-0 ml-auto hover:opacity-75">Solicitar agora</nuxt-link>
                 </div>
 
             </div>
