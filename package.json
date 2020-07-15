@@ -13,7 +13,9 @@
     "precommit": "npm run lint"
   },
   "dependencies": {
-    "nuxt": "^2.0.0"
+    "nuxt": "^2.0.0",
+    "vee-validate": "^3.3.7",
+    "vue-the-mask": "^0.11.1"
   },
   "devDependencies": {
     "@nuxtjs/tailwindcss": "^2.0.0",

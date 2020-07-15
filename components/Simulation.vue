@@ -1,39 +1,77 @@
 <script>
+import { ValidationProvider, ValidationObserver } from 'vee-validate';
+import { TheMask } from 'vue-the-mask';
+import { extend } from 'vee-validate';
+import * as rules from 'vee-validate/dist/rules';
+import { messages } from 'vee-validate/dist/locale/pt_BR.json';
 
+Object.keys(rules).forEach(rule => {
+  extend(rule, {
+    ...rules[rule], // copies rule configuration
+    message: messages[rule] // assign message
+  });
+});
+
+extend('required', {
+  validate (value) {
+    return {
+      required: true,
+      valid: ['', null, undefined].indexOf(value) === -1
+    };
+  },
+  computesRequired: true
+});
 
 export default {
-
+ components: {
+     TheMask, 
+     ValidationProvider
+    },
     data(){
         return {            
             margin: '0',
-            step: 1,
+            value:'',
+            currentStep: 1,
             simulation: true,
             steps: false ,
-            emprestimo :{
-                value:300,
+            emprestimo :{                
                 cpf:'',
                 nasc:'',
                 name:'',
                 email:'',
-                phone_numer:''
+                phone_number:'',
+                value:1500
             }
 
         }
     },
     methods:{
-         next(){
-            this.step++;
+        next() {
+            this.$refs.form.validate().then(success => {
+                if (!success) {
+                 return;
+            }
+            this.currentStep++; 
+             });        
         },
         set(param){
-            // param>this.step ? '' : this.step = param
-            this.step = param
+            // param>this.currentStep ? '' : this.currentStep = param
+            this.currentStep = param
         },
         send(){
             alert(JSON.stringify(this.emprestimo))
         },
-        changeSteps(){            
+        verify(){
+            // !this.emprestimo.cpf ? 
+        },
+        changeSteps(){  
+            if(this.simulation){
                 this.simulation = !this.simulation
-                setTimeout(()=>{this.steps = !this.steps},550)
+                setTimeout(()=>{this.steps = !this.steps},500)
+            }else{
+                this.steps = !this.steps
+                setTimeout(()=>{this.simulation = !this.simulation},500)
+            }          
                 //animate delay chahnge
         }
     },
@@ -53,20 +91,20 @@ export default {
 
 <div class="flex justify-end ">
    
-    <div class="w-4-5 md:w-3/5 bg-white b-0 p-6 rounded-l-lg ml-10 -mt-40 sm:-mt-48 md:-mt-24 shadow-md right-0 absolute ">
+    <div class="simulation-bar bg-white b-0 p-6 rounded-l-lg ml-10 -mt-40 sm:-mt-48 md:-mt-24 shadow-md right-0 absolute ">
 
-             <div class="max-w-full pr-0 " :style="'margin-right:'+ margin"> 
+             <div class="max-w-full pr-0 " :style=" 'margin-right:' + margin" > 
                  <transition name="fade">
                 <div v-if="simulation">
                      
                  <!-- bind do style com a margin -->
                     <div class=" flex justify-between flex-col sm:flex-row">
                         <div class="info">
-                            <div class="text-blue-5 font-medium  text-sm uppercase">
+                            <div class="text-blue-5 font-medium text-xs uppercase">
                             Faça uma simulação 
                         
                             </div>
-                            <div class="text-xl title font-medium">
+                            <div class="text-2xl title font-medium font-robotoslab">
                             De quanto você está precisando?
                             </div>
                         </div>
@@ -78,11 +116,11 @@ export default {
                     <div>
                         <div class="w-full">
                             <div class=" w-full ">
-                                <input class="w-full" type="range" min="300" max="3000" step="1" v-model="emprestimo.value">
+                                <input class="w-full" type="range" min="300" max="3000" step="50" v-model="emprestimo.value">
                             </div>
                             <div class="flex justify-between mt-2 text-xs ">
-                                <span class=" text-blue-10 text-left font-gordita">$300,00</span>
-                                <span class="text-blue-10 text-right font-gordita">$3000,00</span>
+                                <span class=" text-blue-10 text-left font-gordita">R$300,00</span>
+                                <span class="text-blue-10 text-right font-gordita">R$3000,00</span>
                             </div>
                         </div>
                     </div> 
@@ -106,28 +144,28 @@ export default {
                          </div>
 
                          <div class="flex justify-center items-center flex-col" >
-                            <div @click="set(2)" :class="[(step>1) ?  'stepcheck': 'step']" class="rounded-full w-8 h-8 flex justify-center items-center">
+                            <div @click="set(2)" :class="[(currentStep>1) ?  'stepcheck': 'step']" class="rounded-full w-8 h-8 flex justify-center items-center">
                             <p  class="text-center text-sm">2</p>
                             </div>
-                            <div :class="[(step>1) ?  'stepcheck': 'step']" class="step step1 h-3 w-1"></div>
+                            <div :class="[(currentStep>1) ?  'stepcheck': 'step']" class="step step1 h-3 w-1"></div>
                          </div>
 
                           <div class="flex justify-center items-center flex-col" >
-                            <div @click="set(3)" :class="[(step>2) ?  'stepcheck': 'step']" class="rounded-full w-8 h-8 flex justify-center items-center">
+                            <div @click="set(3)" :class="[(currentStep>2) ?  'stepcheck': 'step']" class="rounded-full w-8 h-8 flex justify-center items-center">
                             <p  class="text-center text-sm">3</p>
                             </div>
-                            <div :class="[(step>2) ?  'stepcheck': 'step']" class="step step1 h-3 w-1"></div>
+                            <div :class="[(currentStep>2) ?  'stepcheck': 'step']" class="step step1 h-3 w-1"></div>
                          </div>
 
                          <div class="flex justify-center items-center flex-col" >
-                            <div @click="set(4)" :class="[(step>3) ?  'stepcheck': 'step']" class="rounded-full w-8 h-8 flex justify-center items-center">
+                            <div @click="set(4)" :class="[(currentStep>3) ?  'stepcheck': 'step']" class="rounded-full w-8 h-8 flex justify-center items-center">
                             <p  class="text-center text-sm">4</p>
                             </div>
-                            <div :class="[(step>3) ?  'stepcheck': 'step']" class="step step1 h-3 w-1"></div>
+                            <div :class="[(currentStep>3) ?  'stepcheck': 'step']" class="step step1 h-3 w-1"></div>
                          </div>
 
                          <div class="flex justify-center items-center flex-col" >
-                            <div @click="set(5)" :class="[(step>4) ?  'stepcheck': 'step']" class="rounded-full w-8 h-8 flex justify-center items-center">
+                            <div @click="set(5)" :class="[(currentStep>4) ?  'stepcheck': 'step']" class="rounded-full w-8 h-8 flex justify-center items-center">
                             <p  class="text-center text-sm">5</p>
                             </div>
                             
@@ -136,55 +174,89 @@ export default {
                     </div>
                  
                          
-                     
                      <div class="flex-grow ml-6 flex justify-between flex-col">
                         <div class="info">
-                            <div class="text-blue-5 font-medium  text-sm uppercase">
+                            <div class="text-blue-5 font-medium  text-xs uppercase">
                             Simulação 
                         
                             </div>
                             <div class="value flex items-start sm:items-end flex-col sm:flex-row">
-                                <div class="text-xl title font-medium">
-                                    Sua solicitação de empréstimo é de
-                                </div>
-                                <div class="pl-1">
-                                    <span class="text-yellow uppercase font-medium text-lg">R$</span>
-                                    <span class="text-blue-5 font-semibold uppercase text-3xl leading-9">{{emprestimo.value}},00</span>
-                                </div>
+                                <span class="">
+                                    <span class="text-2xl title  font-robotoslab font-medium ">
+                                        Sua solicitação de empréstimo é de
+                                    </span>
+                                    <span  class="cursor-pointer p-0 md:pl-3 whitespace-no-wrap"  @click="changeSteps">
+                                        <span class="text-yellow uppercase font-medium text-lg">
+                                            R$
+                                        </span>
+                                        <span class="text-blue-5 font-semibold uppercase text-2xl sm:text-3xl">
+                                            {{emprestimo.value}},00
+                                        </span>
+                                    </span>
+                                </span>
+                               
                             </div>
                         </div>                    
+                     <ValidationObserver >
+                     <form >
                         <div class="content">
-                            <div id="1" v-show="step === 1">
-                                <div class="flex items-center border-b border-b-2 border-gray-300 py-2">
-                                    <input v-model="emprestimo.cpf" id="cpf" class="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none" type="text" placeholder="Digite seu CPF" aria-label="Full name">
-                                </div>
-                            </div>
-                            <div id="2" v-show="step === 2">
-                                <div class="flex items-center border-b border-b-2 border-gray-300 py-2">
-                                    <input v-model="emprestimo.nasc" id="nascimento" v-mask="'##/##/####'" class="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none" type="text" placeholder="Data de Nascimento" aria-label="Full name">
-                                </div>
-                            </div>
-                            <div id="3" v-show="step === 3">
-                                <div class="flex items-center border-b border-b-2 border-gray-300 py-2">
-                                    <input v-model="emprestimo.name" id="name" class="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none" type="text" placeholder="Nome" aria-label="Full name">
-                                </div>
-                            </div>
-                            <div id="4" v-show="step === 4">
-                                <div class="flex items-center border-b border-b-2 border-gray-300 py-2">
-                                    <input v-model="emprestimo.email" id="email" class="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none" type="email" placeholder="Email" aria-label="Full name">
-                                </div>
-                            </div>
-                            <div id="5" v-show="step === 5">
-                                <div class="flex items-center border-b border-b-2 border-gray-300 py-2">
-                                    <input v-model="emprestimo.phone_numer" id="telefone" class="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none" type="text" placeholder="Celular" aria-label="Full name">
-                                </div>
-                            </div>
+                            {{currentStep}}
+                                <fieldset v-if="currentStep === 1">
+                              
+                                <ValidationProvider rules="required"  name="cpf" v-slot="{ errors }">
+                                    <div class="flex items-center border-b border-b-2 border-gray-300 py-2">
+                                    <the-mask  :mask="['###.###.###-##']" v-model="emprestimo.cpf" id="cpf" name="cpf" class="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none" type="text" placeholder="Digite seu CPF"  />
+                                    </div>
+                                    <span>{{ errors[0] }}</span>
+                                </ValidationProvider>
+                                </fieldset>
+
+                                <fieldset v-else-if="currentStep === 2">
+                                <ValidationProvider rules="required"  name="nascimento" v-slot="{ errors }">
+                                    <div class="flex items-center border-b border-b-2 border-gray-300 py-2">
+                                      <the-mask v-model="emprestimo.nasc" id="nascimento" :mask="'##/##/####'" class="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none" type="text" placeholder="Data de Nascimento"  />
+                                     </div>
+                                <span>{{ errors[0] }}</span>
+                                </ValidationProvider>
+                                </fieldset>
+
+                           
+                                <fieldset v-else-if="currentStep === 3">
+                                    <ValidationProvider rules="required"  name="nome" v-slot="{ errors }">
+                                        <div class="flex items-center border-b border-b-2 border-gray-300 py-2">
+                                            <input v-model="emprestimo.name" maxlength="55" id="name" class="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none" type="text" placeholder="Nome" >
+                                        </div>
+                                         <span>{{ errors[0] }}</span>
+                                     </ValidationProvider>
+                                </fieldset>
+
+                                <fieldset v-else-if="currentStep === 4">
+                                    <ValidationProvider rules="required|email"  name="email" v-slot="{ errors }">
+                                        <div class="flex items-center border-b border-b-2 border-gray-300 py-2">
+                                            <input v-model="emprestimo.email" id="email" class="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none" type="email" placeholder="Email" >
+                                        </div>
+                                         <span>{{ errors[0] }}</span>
+                                    </ValidationProvider>
+                                </fieldset>
+
+                                <fieldset v-else-if="currentStep === 5">
+                                    <ValidationProvider rules="required"  name="celular" v-slot="{ errors }">
+                                        <div class="flex items-center border-b border-b-2 border-gray-300 py-2">
+                                            <the-mask  name="celular" :mask="['(##) ####-####', '(##) #####-####']" v-model="emprestimo.phone_number" id="telefone" class="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none" type="text" placeholder="Celular"  />
+                                        </div>
+                                         <span>{{ errors[0] }}</span>
+                                    </ValidationProvider>
+                                </fieldset>
+                                                          
+                             <button type="button" >gooo</button>
                         </div>
-                        
-                             <a to="#" v-show="step < 5" @click="next" class="cursor-pointer rounded-full  pt-2 py-1 px-4 text-white uppercase text-lg whitespace-no-wrap bg-yellow mt-3 sm:mt-0 ml-auto hover:opacity-75">Avançar</a>
-                             <a to="#"  v-show="step === 5" @click="send" class="cursor-pointer rounded-full  pt-2 py-1 px-4 text-white uppercase text-lg whitespace-no-wrap bg-yellow mt-3 sm:mt-0 ml-auto hover:opacity-75">Avançar</a>
+                         
+                             <a to="#" v-show="currentStep < 5" @click="next" class="cursor-pointer rounded-full  pt-2 py-1 px-4 text-white uppercase text-lg whitespace-no-wrap bg-yellow mt-3 sm:mt-0 ml-auto hover:opacity-75">Avançar</a>
+                             <a to="#"  v-show="currentStep === 5" @click="send" class="cursor-pointer rounded-full  pt-2 py-1 px-4 text-white uppercase text-lg whitespace-no-wrap bg-yellow mt-3 sm:mt-0 ml-auto hover:opacity-75">Avançar</a>
                             
                          
+                        </form>
+                        </ValidationObserver>
                     </div>
                     
                   </div>
@@ -198,6 +270,7 @@ export default {
     
 </template>
 <style scoped>
+
 .step {
     color: #C4C4C4;
     background-color: #EDEDED;
@@ -241,7 +314,7 @@ input[type=range]::-webkit-slider-thumb {
 input[type=range]::-webkit-slider-thumb:active {
   height: 18px;
   width: 18px;
-  box-shadow: 0 0 0 10px rgba(0,0,0,0.1);
+  box-shadow: 0 0 0 7px rgba(41, 169, 255, 0.295);
 }
 
 input[type=range]::slider-runnable-track {

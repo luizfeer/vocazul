@@ -2,6 +2,7 @@ module.exports = {
   /*
   ** Headers of the page
   */
+
  server: {
   port: 8000, // default: 3000
   host: '0.0.0.0' // default: localhost
@@ -35,6 +36,10 @@ module.exports = {
     /*
     ** Run ESLint on save
     */
+  transpile: [
+    "vee-validate/dist/rules"
+  ],
+  
     extend (config, { isDev, isClient }) {
       if (isDev && isClient) {
         config.module.rules.push({
