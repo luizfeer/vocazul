@@ -1,31 +1,11 @@
 <script>
-import { ValidationProvider, ValidationObserver } from 'vee-validate';
+import { isValidEmail, isValidCPF, isValidMobilePhone } from "@brazilian-utils/brazilian-utils";
 import { TheMask } from 'vue-the-mask';
-import { extend } from 'vee-validate';
-import * as rules from 'vee-validate/dist/rules';
-import { messages } from 'vee-validate/dist/locale/pt_BR.json';
 
-Object.keys(rules).forEach(rule => {
-  extend(rule, {
-    ...rules[rule], // copies rule configuration
-    message: messages[rule] // assign message
-  });
-});
-
-extend('required', {
-  validate (value) {
-    return {
-      required: true,
-      valid: ['', null, undefined].indexOf(value) === -1
-    };
-  },
-  computesRequired: true
-});
 
 export default {
  components: {
      TheMask, 
-     ValidationProvider
     },
     data(){
         return {            
@@ -41,22 +21,41 @@ export default {
                 email:'',
                 phone_number:'',
                 value:1500
-            }
+            },
+            isValidEmail,
+            isValidCPF,
+            isValidMobilePhone
 
         }
     },
     methods:{
         next() {
-            this.$refs.form.validate().then(success => {
-                if (!success) {
-                 return;
-            }
-            this.currentStep++; 
-             });        
+           if(this.currentStep ===1){//cpf
+               if(isValidCPF(this.emprestimo.cpf)){
+                   this.currentStep++; 
+               }
+
+           }else if(this.currentStep ===2){//nome
+               if(this.emprestimo.name.length > 4){
+                   this.currentStep++; 
+               }
+
+           }else if(this.currentStep ===3){//email
+               if(isValidEmail(this.emprestimo.email)){
+                   this.currentStep++; 
+               }
+
+           }else if(this.currentStep ===4){//celular
+               if(isValidMobilePhone(this.emprestimo.phone_number)){
+                   this.currentStep++; 
+               }
+
+           }
+                
         },
         set(param){
-            // param>this.currentStep ? '' : this.currentStep = param
-            this.currentStep = param
+            param>this.currentStep ? '' : this.currentStep = param
+            //this.currentStep = param
         },
         send(){
             alert(JSON.stringify(this.emprestimo))
@@ -197,66 +196,64 @@ export default {
                                
                             </div>
                         </div>                    
-                     <ValidationObserver >
-                     <form >
+                   
                         <div class="content">
-                            {{currentStep}}
-                                <fieldset v-if="currentStep === 1">
-                              
-                                <ValidationProvider rules="required"  name="cpf" v-slot="{ errors }">
-                                    <div class="flex items-center border-b border-b-2 border-gray-300 py-2">
-                                    <the-mask  :mask="['###.###.###-##']" v-model="emprestimo.cpf" id="cpf" name="cpf" class="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none" type="text" placeholder="Digite seu CPF"  />
-                                    </div>
-                                    <span>{{ errors[0] }}</span>
-                                </ValidationProvider>
-                                </fieldset>
-
-                                <fieldset v-else-if="currentStep === 2">
-                                <ValidationProvider rules="required"  name="nascimento" v-slot="{ errors }">
-                                    <div class="flex items-center border-b border-b-2 border-gray-300 py-2">
-                                      <the-mask v-model="emprestimo.nasc" id="nascimento" :mask="'##/##/####'" class="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none" type="text" placeholder="Data de Nascimento"  />
-                                     </div>
-                                <span>{{ errors[0] }}</span>
-                                </ValidationProvider>
-                                </fieldset>
-
                            
-                                <fieldset v-else-if="currentStep === 3">
-                                    <ValidationProvider rules="required"  name="nome" v-slot="{ errors }">
-                                        <div class="flex items-center border-b border-b-2 border-gray-300 py-2">
-                                            <input v-model="emprestimo.name" maxlength="55" id="name" class="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none" type="text" placeholder="Nome" >
-                                        </div>
-                                         <span>{{ errors[0] }}</span>
-                                     </ValidationProvider>
-                                </fieldset>
+                                <div v-if="currentStep === 1">
+                                    <div class="flex items-center border-b border-b-2 border-gray-300 py-2">
+                                        <the-mask  :mask="['###.###.###-##']" v-model="emprestimo.cpf" id="cpf" name="cpf" class="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none" type="text" placeholder="Digite seu CPF"  />
+                                    </div>
+                                    <span v-if="emprestimo.cpf.length > 0 ? !isValidCPF(emprestimo.cpf) : false" class="text-gray-400 italic text-xs">
+                                   CPF inválido
+                                   </span>
+                                </div>
 
-                                <fieldset v-else-if="currentStep === 4">
-                                    <ValidationProvider rules="required|email"  name="email" v-slot="{ errors }">
+                                                          
+                                <div v-else-if="currentStep === 2">
+                                    <div class="flex items-center border-b border-b-2 border-gray-300 py-2">
+                                            <input v-model="emprestimo.name" maxlength="55" id="name" class="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none" type="text" placeholder="Nome" >
+                                    </div>
+                                    <span v-if="!!emprestimo.name && emprestimo.name.length < 4" class="text-gray-400 italic text-xs">
+                                   Nome inválido
+                                   </span>
+                                    
+                                </div>
+
+                                <div v-else-if="currentStep === 3">
+                               
                                         <div class="flex items-center border-b border-b-2 border-gray-300 py-2">
                                             <input v-model="emprestimo.email" id="email" class="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none" type="email" placeholder="Email" >
                                         </div>
-                                         <span>{{ errors[0] }}</span>
-                                    </ValidationProvider>
-                                </fieldset>
+                                         <span v-if="emprestimo.email.length > 0 ? !isValidEmail(emprestimo.email) : false" class="text-gray-400 italic text-xs">
+                                          Email Inválido
+                                        </span>    
+                                         
+                                    
+                                </div>
 
-                                <fieldset v-else-if="currentStep === 5">
-                                    <ValidationProvider rules="required"  name="celular" v-slot="{ errors }">
-                                        <div class="flex items-center border-b border-b-2 border-gray-300 py-2">
-                                            <the-mask  name="celular" :mask="['(##) ####-####', '(##) #####-####']" v-model="emprestimo.phone_number" id="telefone" class="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none" type="text" placeholder="Celular"  />
-                                        </div>
-                                         <span>{{ errors[0] }}</span>
-                                    </ValidationProvider>
-                                </fieldset>
+                                <div v-else-if="currentStep === 4">                              
+                                    <div class="flex items-center border-b border-b-2 border-gray-300 py-2">
+                                        <the-mask  name="celular" :mask="['(##) ####-####', '(##) #####-####']" v-model="emprestimo.phone_number" id="telefone" class="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none" type="text" placeholder="Celular"  />
+                                    </div>
+                                    <span v-if="emprestimo.phone_number.length > 0 ? !isValidMobilePhone(emprestimo.phone_number) : false" class="text-gray-400 italic text-xs">
+                                   Celular Inválido
+                                   </span>                                     
+                                </div>
+
+                                <div v-else-if="currentStep === 5">                              
+                                    <div class="flex items-center border-b border-b-2 border-gray-300 py-2">
+                                    Dados enviados!
+                                    </div>                                     
+                                </div>
                                                           
-                             <button type="button" >gooo</button>
+                           
                         </div>
                          
                              <a to="#" v-show="currentStep < 5" @click="next" class="cursor-pointer rounded-full  pt-2 py-1 px-4 text-white uppercase text-lg whitespace-no-wrap bg-yellow mt-3 sm:mt-0 ml-auto hover:opacity-75">Avançar</a>
                              <a to="#"  v-show="currentStep === 5" @click="send" class="cursor-pointer rounded-full  pt-2 py-1 px-4 text-white uppercase text-lg whitespace-no-wrap bg-yellow mt-3 sm:mt-0 ml-auto hover:opacity-75">Avançar</a>
                             
                          
-                        </form>
-                        </ValidationObserver>
+                      
                     </div>
                     
                   </div>

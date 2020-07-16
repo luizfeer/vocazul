@@ -822,6 +822,11 @@
     lodash "^4.17.13"
     to-fast-properties "^2.0.0"
 
+"@brazilian-utils/brazilian-utils@^1.0.0-rc.9":
+  version "1.0.0-rc.9"
+  resolved "https://registry.yarnpkg.com/@brazilian-utils/brazilian-utils/-/brazilian-utils-1.0.0-rc.9.tgz#f2a396f618ab150c228820b1e87f7c3613d5fbbe"
+  integrity sha512-dTSAyeQr+FWFKeRleyjtTyikyN1mxuZGcjzNyS3/a3SBG8jgHUodARb5mpm5b89gega3qsXdW9BXQ+XCOupQiA==
+
 "@csstools/convert-colors@^1.4.0":
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/@csstools/convert-colors/-/convert-colors-1.4.0.tgz#ad495dc41b12e75d588c6db8b9834f08fa131eb7"
