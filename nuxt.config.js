@@ -3,11 +3,11 @@ module.exports = {
   ** Headers of the page
   */
 
- server: {
-  port: 8000, // default: 3000
-  host: '0.0.0.0' // default: localhost
-},
- mode: 'spa',
+  server: {
+    port: 8000, // default: 3000
+    host: '0.0.0.0' // default: localhost
+  },
+  mode: 'spa',
   head: {
     title: 'Você Azul',
     meta: [
@@ -18,16 +18,18 @@ module.exports = {
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Roboto&display=swap' }
-      
-    ],
-    
+
+    ]
+
   },
   /*
   ** Customize the progress bar color
   */
   loading: { color: '#3B8070' },
   buildModules: [
-    '@nuxtjs/tailwindcss'
+    '@nuxtjs/moment',
+    '@nuxtjs/tailwindcss',
+    '@nuxtjs/eslint-module'
   ],
   /*
   ** Build configuration
@@ -36,10 +38,10 @@ module.exports = {
     /*
     ** Run ESLint on save
     */
-  transpile: [
-    "vee-validate/dist/rules"
-  ],
-  
+    transpile: [
+      'vee-validate/dist/rules'
+    ],
+
     extend (config, { isDev, isClient }) {
       if (isDev && isClient) {
         config.module.rules.push({
@@ -52,4 +54,3 @@ module.exports = {
     }
   }
 }
-
