@@ -5,7 +5,6 @@
 ** Default: https://github.com/tailwindcss/tailwindcss/blob/master/stubs/defaultConfig.stub.js
 */
 module.exports = {
-<<<<<<< HEAD
   theme: {
     boxShadow: {
       md: '0px 4px 20px rgba(0, 0, 0, 0.03)'
@@ -238,9 +237,6 @@ module.exports = {
 
   },
 
-=======
-  theme: {},
->>>>>>> 205fe8355933416993de80caedcee6f54ce29e31
   variants: {},
   plugins: [],
   purge: {
