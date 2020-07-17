@@ -1,6 +1,10 @@
 <template>
   <div>
+<<<<<<< HEAD
     <nuxt />
+=======
+    <nuxt/>
+>>>>>>> 205fe8355933416993de80caedcee6f54ce29e31
   </div>
 </template>
 
@@ -50,3 +54,7 @@ html {
   background-color: #35495e;
 }
 </style>
+<<<<<<< HEAD
+=======
+
+>>>>>>> 205fe8355933416993de80caedcee6f54ce29e31
