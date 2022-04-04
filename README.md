@@ -1,4 +1,5 @@
 # Landing Page SSR
+
 Utilizando NuxtJS, TailwindCSS e GraphQL.
 
 > Deploy: https://teste-influu.herokuapp.com/
